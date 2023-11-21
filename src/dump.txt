@@ -1,0 +1,64 @@
+<div>
+{/* Picture  */}
+<div className="w-full">
+    <img
+        className="w-full object-cover"
+        src="design\assets\images\illustration-sign-up-mobile.svg"
+        alt="Hero Image"
+    />
+</div>
+{/* Form  */}
+<div className="px-5 w-full ">
+    <div className="pt-4">
+        <div className="font-bold text-5xl pl-4">
+            Stay Updated!
+        </div>
+    </div>
+    <p>
+        Join 60,000+ product managers receiving monthly updates
+        on:
+    </p>
+    <ul>
+        <li className="flex gap-x-2">
+            <img
+                src="design\assets\images\icon-list.svg"
+                alt="Icon List"
+            />
+            <p>Product discovery and building what matters</p>
+        </li>
+        <li>
+            <img
+                src="design\assets\images\icon-list.svg"
+                alt="Icon List"
+            />
+            <p>Measuring to ensure updates are a success</p>
+        </li>
+        <li>
+            <img
+                src="design\assets\images\icon-list.svg"
+                alt="Icon List"
+            />
+            <p>And much more!</p>
+        </li>
+    </ul>
+    <div className="flex flex-col">
+        <form onSubmit={() => subscribe(email)}>
+            <label>Email address</label>
+            <input
+                value={email}
+                onChange={(e) => setemail(e.target.value)}
+                placeholder="email@compnay.com"
+                required
+                type="email"
+                className="p-1 border border-gray-300"
+            />
+            <button
+                type="submit"
+                className="cursor-pointer p-2 bg-blue-900 text-white rounded-md w-full"
+            >
+                Subscribe to monthly newsletter
+            </button>
+        </form>
+    </div>
+</div>
+</div>
