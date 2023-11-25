@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 
-const SucessModal = ({ email, visibility, setmodal }) => {
+export const modalContext = createContext(true);
+
+const SucessModal = ({ email, visibility }) => {
+    const [modal, setmodal] = useState(true);
     return (
         <div
             className={`${

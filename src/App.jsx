@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import SucessModal from './SucessModal';
+// import SucessModal from './SucessModal'; 
+import modalContext from modalContext
 
 export default function App() {
     const [email, setemail] = useState('');
